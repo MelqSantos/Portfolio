@@ -252,6 +252,7 @@
             grid-template-columns: repeat(16, 1fr);
             grid-template-rows: repeat(6, 6rem);
             row-gap: .5rem;
+            margin-bottom: 1.5rem;
         }
         
         .conhecimento:nth-child(1) {
@@ -286,6 +287,7 @@
         
         .sessao-conhecimentos {
             background-color: #f5f5f5;
+            border-bottom: solid 1px;
         }
         
         .sessao-header {
@@ -429,29 +431,38 @@
         .sessao-contato {
             width: 100%;
             height: 100vh;
-            background-color: #272727;
+            background-color: #f5f5f5;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-top: solid 1px;
         }
         
         .contato-wrapper {
             width: 60%;
             height: 30rem;
             display: flex;
-            box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            background-color: #4b4b4b;
         }
         
         .contato-left {
             width: 35%;
-            background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(imagens/contato.jpg);
+            background: url(imagens/contato.jpg);
             background-size: cover;
+            border: 2px solid;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            opacity: 0.8;
         }
         
         .contato-right {
             width: 65%;
             background-color: #eee;
             padding: 1rem 3rem 3rem;
+            border: 1px solid;
         }
         
         .sessao-contato h1 {
@@ -523,10 +534,15 @@
         footer {
             width: 100%;
             height: 5rem;
-            background-color: #808080;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #16222A;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3A6073, #16222A);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
         
         .footer-content {
@@ -537,14 +553,16 @@
         
         .footer-content p {
             font-family: var(--font-secundary);
-            color: #fff;
+            color: white;
             font-size: 1.2rem;
+            text-shadow: 1px 1px 1px black;
         }
         
         .social-list a {
             margin: 0 2rem;
             color: #fff;
             font-size: 1.5rem;
+            text-shadow: 1px 1px 1px black;
         }
         
         .social-list ul {
