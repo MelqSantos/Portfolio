@@ -10,10 +10,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
+
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <img src="imagens/loader.gif">
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
 
     <div class="container">
 
@@ -31,7 +42,7 @@
             <div class="banner">
                 <h1>Web Developer & Front-End Designer</h1>
                 <p>Melquisedec Cruz dos Santos</p>
-                <button>Saiba mais</button>
+                <button><a id="download" href="#" ><i class="fa fa-download"></i> Currículo</a></button>
             </div>
         </header>
         <aside class="sidebar">
@@ -44,164 +55,199 @@
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://www.facebook.com/melquisanntos" target="blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/melqsantos" target="blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/MelqSantos" target="blank"><i class="fab fa-github-alt"></i></a>
-                <a href="https://join.skype.com/invite/zbOy8WO0G3Fr" target="blank"><i class="fab fa-skype"></i></a>
+                <a href="" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" target="blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="" target="blank"><i class="fab fa-github-alt"></i></a>
+                <a href="" target="blank"><i class="fab fa-skype"></i></a>
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos" id="conhecimentos">
-            <div class="sessao-header">
-                <h1>Conhecimentos</h1>
+
+        <section class="sessao-conhecimento" id="conhecimentos">
+
+            <div class="titulo">
+                <span>Conhecimentos</span>
             </div>
-            <div class="conhecimentos">
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sed fugit, dolorem cupiditate voluptatum perferendis autem maxime totam architecto rerum cum. Deserunt recusandae obcaecati dignissimos quidem quod, in possimus iusto!</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fas fa-globe"></i>
-                        <h3>ASP.NET</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa dignissimos earum ipsa eligendi ullam pariatur est accusamus illum iure blanditiis facere hic fuga, eveniet ipsam esse, dolores vitae neque voluptatibus!</p>
+
+            <div class="container-conhecimento">
+
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/1.png" alt="">
+                        <h2>HTML</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Banco de dados</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet libero est quam recusandae asperiores, ullam mollitia repellendus minus ab quisquam quaerat odio nisi, eligendi consequuntur hic, incidunt quae ratione!</p>
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/2.png" alt="">
+                        <h2>Banco de dados</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fas fa-drafting-compass"></i>
-                        <h3>Design</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis vel maxime, sit similique, quisquam dolorem labore iure nesciunt unde eveniet, voluptates at amet hic ratione recusandae aut ad quae debitis.</p>
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/3.png" alt="">
+                        <h2>Git e GitHub</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum est eaque corporis quasi laborum suscipit nam? Eveniet voluptatum a harum, inventore natus quidem, delectus voluptas nam, porro ratione eius in.</p>
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/4.png" alt="">
+                        <h2>CSS</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-github"></i>
-                        <h3>Git e GitHub</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, perferendis. Incidunt reprehenderit debitis quis est, illum facere quibusdam voluptates dignissimos blanditiis, esse officiis, odio ratione repudiandae magni
-                            quidem perspiciatis unde.</p>
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/5.png" alt="">
+                        <h2>ASP.NET</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
                     </div>
                 </div>
-                <div class="conhecimento-img-wrapper">
-                    <img src="imagens/conhecimento.png" alt="Imagem conhecimento">
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/6.png" alt="">
+                        <h2>Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
+                    </div>
                 </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/7.png" alt="">
+                        <h2>Bootstrap</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo">
+                <span>Galeria de Projetos</span>
             </div>
         </section>
 
         <section class="sessao-projetos" id="projetos">
-            <div class="sessao-header">
-                <h1>Projetos</h1>
-            </div>
+            <div class="container-projetos">
 
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj1.jpg" alt="Imagem do projeto ToDo" />
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="media/pic1.jpg" width="100%">
+                            <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                        </div>
                     </div>
-                    <div class="card-info">
-                        <h2>Clínica estética</h2>
-                        <h3>Bootstrap e Jquery</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore qui odio exercitationem placeat dolores tempore earum consectetur quae illum ipsa ut eos repudiandae, iusto esse, odit alias!</p>
-                        <button class="btn">Demonstração</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj2.jpg" alt="Imagem do projeto Maratona" />
-                    </div>
-                    <div class="card-info">
-                        <h2>Clínica - Portal</h2>
-                        <h3>ASP.NET MVC</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vero, deleniti molestiae a corrupti ea temporibus atque, nostrum inventore incidunt voluptatibus sapiente aspernatur maiores, neque fugiat adipisci totam!</p>
-                        <button class="btn">Demonstração</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj3.jpg" alt="Imagem do projeto casa bela ">
-                    </div>
-                    <div class="card-info">
-                        <h2>Website Startup</h2>
-                        <h3>HTML e PHP</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic ad nesciunt tempore porro? Quas, perspiciatis hic? Alias aliquid distinctio neque error deleniti incidunt itaque beatae dolores tempore.</p>
-                        <button class="btn">Demonstração</button>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic2.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <p>How to add multiple videos in a website or<br> to make a video gallery</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic3.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <p>How to add multiple videos in a website or<br> to make a video gallery</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic4.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <p>How to add multiple videos in a website or<br> to make a video gallery</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="sessao-contato" id="contato">
-            <div class="contato-wrapper">
-                <div class="contato-left"></div>
-                <div class="contato-right">
-                    <h1>Contato</h1>
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome" required>
-                            <label for="nome" class="field-label">Nome</label>
+        <div class="video-player" id="VideoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                    <source src="media/servicos.mp4" type="video/mp4">
+                </video>
+            <img src="media/close.png" class="close-btn" onclick="stopVideo()">
+        </div>
+
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="content">
+                <h2>Contato</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem mollitia odit sed eligendi neque maiores qui atque cumque nostrum.</p>
+            </div>
+            <div class="container-contato">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Endereço</h3>
+                            <p>4671 Sugar Camp Road, <br> Owatonna, Minnesota, <br>55060</p>
                         </div>
-                        <div class="input-group">
-                            <input type="text" class="field" id="email" required>
-                            <label for="email" class="field-label">E-mail</label>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Telefone</h3>
+                            <p>507-475-6094</p>
                         </div>
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem" required></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>JohnMyast@gmail.com</p>
                         </div>
-                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input type="hidden" name="accessKey" value="1f08c7b9-b051-43f3-b3a7-3821fa3b55b4">
+                        <!-- redirecionar após enviar a mensagem do form
+                        <input type="hidden" name="redirectTo" value=""> -->
+                        <h2>Envie uma mensagem</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span>Nome Completo</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required" name="message"></textarea>
+                            <span>Mensagem</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
                     </form>
                 </div>
             </div>
+
+
         </section>
 
-        <footer>
-            <div class="footer-content">
-                <p>
-                    Copyright &copy; 2020, Melqui Santos - Todos os direitos reservados
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href="https://www.facebook.com/melquisanntos" target="blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/melqsantos" target="blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://github.com/MelqSantos" target="blank"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div>
+        <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+            <p class="copyright">
+                Copyright &copy; Melqui Santos 2021. Todos os direitos reservados.
+            </p>
         </footer>
 
         <a href="#home" id="link-topo">
             <i class="fas fa-arrow-up"></i>
         </a>
 
+    </div>
     </div>
 
 </body>
