@@ -514,7 +514,7 @@ header {
 
 @media (max-width: 991px) {
     .video-player {
-        transform: translate(-50%, 2100px);
+        transform: translate(-50%, 2500px);
         width: 80%;
     }
     video:focus {
