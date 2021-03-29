@@ -213,8 +213,8 @@ header {
     animation: moveBanner 1s 0.9s forwards;
 }
 
-.banner button:hover {
-    opacity: 1;
+.banner button:focus {
+    outline: inherit;
 }
 
 @keyframes moveBanner {
@@ -334,14 +334,6 @@ header {
     font-size: 2.5em;
 }
 
-.sessao-conhecimentos {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    min-height: 100vh;
-    background: #222;
-}
-
 .container-conhecimento {
     font-family: var(--font-secundary);
     position: relative;
@@ -356,8 +348,8 @@ header {
 
 .container-conhecimento .box {
     background: #000000;
-    background: -webkit-linear-gradient(to bottom, #434343, #000000);
-    background: linear-gradient(to bottom, #434343, #000000);
+    background: -webkit-linear-gradient(to bottom, #222222, #000000);
+    background: linear-gradient(to bottom, #222222, #000000);
     padding: 20px;
     display: grid;
     font-size: 20px;
@@ -414,6 +406,10 @@ header {
 
 /* Sessão Projetos */
 
+.sessao-projetos {
+    background-image: linear-gradient(to bottom, #000000, #030303, #070707, #0a0a0a, #0d0d0d, #0d0d0d, #0d0d0d, #0d0d0d, #0a0a0a, #070707, #030303, #000000);
+}
+
 .container-projetos {
     width: 80%;
     margin: 4vw auto;
@@ -453,7 +449,7 @@ header {
     position: relative;
     border-radius: 6px;
     overflow: hidden;
-    border: solid 1px rgba(255, 255, 255, 0.5);
+    border: solid 1px rgba(255, 255, 255, 0.8);
 }
 
 .small-img-row {
@@ -464,7 +460,7 @@ header {
     border-radius: 6px;
     overflow: hidden;
     width: 90%;
-    border: solid 1px rgba(255, 255, 255, 0.6);
+    border: solid 1px rgba(255, 255, 255, 0.8);
 }
 
 .small-img {
@@ -563,9 +559,11 @@ header {
 }
 
 .contact .content p {
-    font-weight: 300;
+    font-weight: 500;
     color: #fff;
     font-family: var(--font-secundary);
+    font-size: 1.1em;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .container-contato {
@@ -603,10 +601,10 @@ header {
 .container-contato .contact-info .box .text {
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .container-contato .contact-info .box .text h3 {

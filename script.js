@@ -11,6 +11,7 @@ var myVideo = document.getElementById("myVideo");
 
 function stopVideo() {
     videoPlayer.style.display = "none";
+    myVideo.src = "none";
 }
 
 function playVideo(file) {
