@@ -132,35 +132,111 @@
 
                 <div class="row">
                     <div class="col">
-                        <div class="feature-img">
-                            <img src="media/pic1.JPG" width="100%">
-                            <img src="media/play.png" class="play-btn" onclick="playVideo('media/Interface.mp4')">
+                        <div class="feature">
+                            <div class="window">
+                                <div class="ball"></div>
+                                <div class="ball"></div>
+                                <div class="ball"></div>
+                            </div>
+
+                            <div class="bar-wrap">
+
+                                <div class="bar">
+                                    <div class="fill" style="width:60%; background-color: #f06529;">HTML</div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="fill" style="width:70%; background-color: #2965F1">CSS</div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="fill" style="width:45%; background-color: #f0c419;">JAVASCRIPT</div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="fill" style="width:25%; background-color: #787CB5;">PHP</div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="fill" style="width:20%; background-color: #E3242B;">SQL</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col hide-list" id="hide-list">
                         <div class="small-img-row">
                             <div class="small-img">
                                 <img src="media/pic2.jpg">
-                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/Login.mp4')">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/flor.mp4')">
                             </div>
-                            <p>Criação de uma aplicação em ASP.NET MVC para uma clínica de estética. </p>
+                            <div class="description">
+                                <h3>Site de vendas</h3>
+                                <p>Criação de layout para loja de roupas, utilizando HTML e CSS com SASS.</p>
+                            </div>
                         </div>
                         <div class="small-img-row">
                             <div class="small-img">
-                                <img src="media/pic3.JPG">
-                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/Startup.mp4')">
+                                <img src="media/pic3.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/loteria.mp4')">
                             </div>
-                            <p>Criação de um Website em HTML / PHP para uma Startup.</p>
+                            <div class="description">
+                                <h3>Validação de jogos</h3>
+                                <p>Criação de página para conferência de jogos da lotofácil, utilizando Javascript com HTML e CSS.</p>
+                            </div>
                         </div>
                         <div class="small-img-row">
                             <div class="small-img">
                                 <img src="media/pic4.jpg">
-                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/calculadora.mp4')">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
                             </div>
-                            <p>Criação de calculadora utilizando HTML/CSS, Bootstrap e Javascript.</p>
+                            <div class="description">
+                                <h3>Serviços clínica estética</h3>
+                                <p>Criação de layout com animações utilizando o framework Jquery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="show-list">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic5.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <div class="description">
+                                <h3>Calculadora simples</h3>
+                                <p>Criação de calculadora utilizando HTML/CSS, Bootstrap e Javascript.</p>
+                            </div>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic6.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <div class="description">
+                                <h3>TCM (2° semestre do curso)</h3>
+                                <p>Criação de um Website em HTML / PHP para uma Startup.</p>
+                            </div>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/pic7.jpg">
+                                <img src="media/play.png" class="play-btn" onclick="playVideo('media/servicos.mp4')">
+                            </div>
+                            <div class="description">
+                                <h3>TCC (3° semestre do curso)</h3>
+                                <p>Criação de uma aplicação em ASP.NET MVC para uma clínica de estética.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Paginação -->
+                <div class="pagination">
+                    <a onclick="mais()" href="javascript:void(0)">❮</a>
+                    <a onclick="mais()" href="javascript:void(0)">❯</a>
+                </div>
+                <!-- Fim da paginação -->
+
             </div>
         </section>
 
