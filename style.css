@@ -480,6 +480,7 @@ header {
 
 .small-img-row h3 {
     text-align: center;
+    font-family: var(--font-primary);
     color: #fff;
     text-shadow: 1px 1px #000;
 }
