@@ -68,9 +68,28 @@ html {
     cursor: pointer;
 }
 
+#down {
+    display: none;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width:640px) {
     .hamburguer {
         display: none;
+    }
+    #down {
+        display: flex;
+        filter: invert(100%);
+        transform: translateY(70vh);
+        animation: aparecer 2s;
     }
 }
 
@@ -170,6 +189,7 @@ header {
 
 @media (max-width: 991px) {
     .banner {
+        top: 20%;
         left: 5%;
     }
 }
