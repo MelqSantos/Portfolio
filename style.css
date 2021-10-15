@@ -93,6 +93,15 @@ html {
     }
 }
 
+@media (max-width:480px) {
+    #down {
+        display: flex;
+        filter: invert(100%);
+        transform: translateY(55vh);
+        animation: aparecer 6s;
+    }
+}
+
 .hamburguer span {
     position: absolute;
     opacity: 0;
