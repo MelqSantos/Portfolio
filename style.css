@@ -9,7 +9,7 @@
 }
 
 
-/* ini: Preloader */
+/* inicio: Preloader */
 
 #preloader {
     position: fixed;
@@ -91,6 +91,9 @@ html {
         transform: translateY(65vh);
         animation: aparecer 6s;
     }
+    .col-sm-12 img {
+        text-align: center !important;
+    }
 }
 
 @media (max-width:480px) {
@@ -143,7 +146,7 @@ html {
 }
 
 .show-menu #line1 {
-    transform: rotate(45deg) translate(.4rem, .4rem);
+    transform: rotate(45deg) translate(.3rem, .2rem);
 }
 
 .show-menu #line2 {
@@ -152,7 +155,7 @@ html {
 }
 
 .show-menu #line3 {
-    transform: rotate(-45deg) translate(.2rem, -.5rem);
+    transform: rotate(-45deg) translate(.3rem, -.4rem);
 }
 
 header {
@@ -385,7 +388,6 @@ header {
     place-items: center;
     text-align: center;
     color: #fff;
-    transition: 0.5s;
     border-radius: 5px;
 }
 
@@ -429,6 +431,42 @@ header {
     .container-conhecimento .box {
         grid-column: unset !important;
         grid-row: unset !important;
+    }
+}
+
+@media (min-width: 1560px) {
+    /* HTML */
+    .container-conhecimento .box:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    /* SQL */
+    .container-conhecimento .box:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    /* Git */
+    .container-conhecimento .box:nth-child(3) {
+        grid-row: span 3;
+    }
+    /* CSS */
+    .container-conhecimento .box:nth-child(4) {
+        grid-row: span 4;
+        grid-column: span 3;
+    }
+    /* Design */
+    .container-conhecimento .box:nth-child(5) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    /* Javascript */
+    .container-conhecimento .box:nth-child(6) {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    /*Bootstrap*/
+    .container-conhecimento .box:nth-child(7) {
+        grid-column: span 1;
     }
 }
 
